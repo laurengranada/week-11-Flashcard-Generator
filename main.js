@@ -3,6 +3,17 @@ var inquirer = require('inquirer');
 var fs = require('fs');
 var cardInfo = require('basin.json')
 
+// starts sequence	
+startSequence();
+
+
+// set variables for sequence call	
+var current;
+var cards = "";
+var startScore = 0;
+var index = 0;
+
+// for loop 
 
 //function setup for Basic Card
 function BasicCard(front, back){
@@ -44,5 +55,4 @@ function ClozeCard(text, cloze){
 // 			name: "hiddenInfo"
 // 		}
 // 	])
-
 
